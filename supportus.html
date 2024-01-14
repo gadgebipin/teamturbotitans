@@ -243,7 +243,53 @@
       });
     });
   </script>
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Data for the estimated cost of the project
+      const estimatedCostData = {
+        labels: [
+          'Engine & Generator',
+          'Battery',
+          'Suspension',
+          'Traction Motor',
+          'Brakes & Steering',
+          'Controller',
+          'Transmission',
+          'Skin and Body',
+          'Rollcage',
+          'Safety and Ergonomics',
+          'Electrical Components',
+        ],
+        datasets: [{
+          label: 'Estimated Cost (in INR)',
+          backgroundColor: 'rgba(75, 192, 192, 0.7)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1,
+          data: [155500, 130000, 80000, 100000, 68000, 82000, 60000, 100000, 79000, 80000, 80500],
+        }],
+      };
 
+      // Get the canvas element
+      const costCanvas = document.getElementById('costChart').getContext('2d');
+
+      // Create the bar chart
+      const costChart = new Chart(costCanvas, {
+        type: 'bar',
+        data: estimatedCostData,
+        options: {
+          scales: {
+            y: {
+              beginAtZero: true,
+              max: 200000,
+            },
+          },
+        },
+      });
+    });
+  </script>
   <!-- Modal for displaying images in original scale -->
   <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
     aria-hidden="true">
