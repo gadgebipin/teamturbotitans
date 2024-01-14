@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team TurboTitans</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    /* Header */
+    header {
+      background-color: #95c6ff;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .header-text {
+      font-size: 24px;
+      color: #FFF;
+      margin-bottom: 10px;
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: left;
+      align-items: left;
+      margin-top: 20px;
+    }
+
+    .logo-container img {
+      border-radius: 50%;
+      margin: 0 10px;
+      width: 80px;
+      height: 80px;
+    }
+
+    /* Navigation */
+    .navbar {
+      background-color: #343a40;
+    }
+
+    .navbar-brand {
+      color: #FFF;
+      font-weight: bold;
+    }
+
+    .navbar-toggler-icon {
+      background-color: #FFF;
+    }
+
+    .navbar-nav .nav-link {
+      color: #FFF;
+    }
+
+    /* Main Content */
+    main {
+      padding: 20px;
+    }
+
+    main h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #F75D45;
+    }
+
+    main p {
+      margin-bottom: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+      color: #FFF;
+      font-size: 14px;
+    }
+
+    footer a {
+      color: #FFF;
+      text-decoration: none;
+    }
+
+    /* Achievements Section */
+    .achievements-section {
+      background-color: #87CEEB;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .achievements-section img {
+      width: 300px;
+      height: 200px;
+      margin: auto;
+      display: block;
+      cursor: pointer;
+    }
+
+    .carousel-inner {
+      text-align: center;
+    }
+
+    /* Chart Section */
+    .chart-section {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    /* Total Cost Section */
+    .total-cost-section {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .total-cost {
+      font-size: 18px;
+      font-weight: bold;
+      color: #F75D45;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="bg-white text-center py-3">
+    <div class="d-flex align-items-center justify-content-center">
+      <div class="logo-container">
+        <img src="group logo.jpg" alt="Team Turbo Titans Logo" class="mr-3">
+        <img src="REEV LOGO.jpeg" alt="Reev Logo"
+          class="mr-3">
+        <img src="avcoe logo.png" alt="AVCOE Logo">
+      </div>
+      <div class="ml-3">
+        <h1 class="display-4 font-weight-bold">Team Turbo Titans</h1>
+        <p class="lead">Amrutvahini College of Engineering, Sangamner</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sponsors.html">Our Sponsors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="supportus.html">Support Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://saeindia.org/bangaluru-section/reev/">REEV</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <!-- Team Section -->
+    <section class="team-section">
+      <h2>Our Team</h2>
+
+      <!-- Chassis System -->
+      <div class="system">
+        <h3>Chassis System</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="sanapprasen.jpg" alt="Team Member 1">
+              <p>Sanap Prasen(Team Captain)</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="mauli.jpeg.jpg" alt="Team Member 2">
+              <p>Devmunde Mauli(System Leader)</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="photo.jpg" alt="Team Member 3">
+              <p>Gadge Bipin</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="omkarmehetrre.jpg" alt="Team Member 4">
+              <p>Mehetre Omkar</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transmission System -->
+      <div class="system">
+        <h3>Transmission System</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="nikhil.jpg" alt="Team Member 5">
+              <p>Jejurkar Nikhil(System Leader)</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="swagat.jpg" alt="Team Member 6">
+              <p>Gaikawad Swagat</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="sudarshan amle.jpg" alt="Team Member 7">
+              <p>Amle Sudarshan</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="salunke akshada.jpg" alt="Team Member 8">
+              <p>Salunke Akshada</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Steering System -->
+      <div class="system">
+        <h3>Steering System</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="sudarshan.png" alt="Team Member 9">
+              <p>Deshmukh Sudarshan(System Leader)</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="vishalambre.jpg" alt="Team Member 10">
+              <p>Ambre Vishal</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="janhavidharmadhikari.jpg" alt="Team Member 11">
+              <p>Dharmadhikari Janhavi</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="vaishnavi pawar.jpg" alt="Team Member 12">
+              <p>Pawar Vaishnavi.jpg</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Electrical System -->
+      <div class="system">
+        <h3>Electrical System</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="sanketpathare.jpg" alt="Team Member 13">
+              <p>Pathare Sanket (System Leader)</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="sanketpawar.jpg" alt="Team Member 14">
+              <p>Pawar Sanket</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="sandesh darade.jpg" alt="Team Member 15">
+              <p>Darade Sandesh</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="dhagude kirti.jpg" alt="Team Member 16">
+              <p>Dhagude kirti</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        /* suspension & Breaking system*/
+         <div class="system">
+        <h3>Suspension & Breaking System</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="omhure.jpg" alt="Team Member 17">
+              <p>Hure Om(System Leader)</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="varpe sachin.jpg" alt="Team Member 18">
+              <p>Varpe Sachin </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="saideep thombare.jpg" alt="Team Member 19">
+              <p>Thombare Saideep</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="ranjale .jpg" alt="Team Member 20">
+              <p>Ranjale Abhishek</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!-- Electronics System -->
+      <div class="system">
+        <h3>Electronics System</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="maheshgujrathi.jpeg" alt="Team Member 17">
+              <p>Gujarathi Mahesh(System Leader)</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="mahesh dighe.jpeg" alt="Team Member 18">
+              <p>Dighe Mahesh </p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="harshada bhagade.jpg" alt="Team Member 19">
+              <p>Bhagade Harshada</p>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="team-member">
+              <img src="sakshibadakh.jpg" alt="Team Member 20">
+              <p>Badakh Sakshi</p>
+            </div>
+             <div class="col-md-3">
+            <div class="team-member">
+              <img src="sakshinagare.jpg" alt="Team Member 21">
+              <p>Nagare Sakshi</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <p>&copy; 2024 Team TurboTitans. All rights reserved.</p>
+      </div>
+      <div class="col-md-6 text-right">
+        <p>Contact Us:</p>
+        <a href="https://www.instagram.com/_team_turbotitans_" target="_blank">
+          <img src="path/to/instagram-logo.png" alt="Instagram Logo" height="20" width="20">
+        </a>
+        <span> _team_turbotitans_</span>
+        <br>
+        <span>Email: teamturbotitans@gmail.com</span>
+        <br>
+        <span>Mobile: +91 95940 35057</span>
+      </div>
+    </div>
+    <p class="small-text">
+      This website is developed by Gadge Bipin (<a href="mailto:gadgebipin@gmail.com">contact</a>, <a href="https://www.instagram.com/bipingadge" target="_blank">insta</a>, mobile no: 9373986141).
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.carousel').carousel({
+        interval: 2000 // Set interval in milliseconds (2 seconds in this example)
+      });
+
+      // Display images in original scale when clicked
+      $('.achievements-section img').on('click', function () {
+        $('#imageModal').modal('show');
+        $('#imageModal img').attr('src', $(this).attr('src'));
+      });
+    });
+  </script>
+
+  <!-- Modal for displaying images in original scale -->
+  <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" class="img-fluid" alt="Modal Image">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
