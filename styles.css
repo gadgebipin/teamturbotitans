@@ -37,6 +37,26 @@ header {
   color: #FFF;
 }
 
+/* styles.css */
+
+/* ... (Previous CSS) ... */
+
+/* Mobile Navbar */
+@media (max-width: 767.98px) {
+  .navbar {
+    background-color: #FFF;
+  }
+
+  .navbar-toggler-icon {
+    background-color: #000;
+    border: 1px solid #000; /* Add border lines */
+  }
+
+  .navbar-toggler {
+    border: 1px solid #000; /* Add border lines */
+  }
+}
+
 .navbar-toggler-icon {
   background-color: #FFF;
 }
