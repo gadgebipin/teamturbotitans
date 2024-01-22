@@ -1,0 +1,90 @@
+/* styles.css */
+
+/* Header */
+header {
+  background-color: #95c6ff;
+  padding: 40px; /* Increased padding for a bigger header */
+  text-align: center;
+}
+
+.header-text {
+  font-size: 24px;
+  color: #FFF;
+  margin-bottom: 10px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-top: 20px;
+}
+
+.logo-container img {
+  border-radius: 50%;
+  margin: 0 10px;
+  width: 80px;
+  height: 80px;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #343a40;
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #FFF;
+}
+
+.navbar-toggler-icon {
+  background-color: #FFF;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+main h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #F75D45;
+}
+
+main p {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: #FFF;
+  font-size: 14px;
+}
+
+footer a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* Achievements Section */
+.achievements-section {
+  background-color: #87CEEB; /* Very faint sky blue background */
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.achievements-section img {
+  width: 300px; /* Width of 300 pixels */
+  height: 200px; /* Height of 200 pixels */
+  margin: auto; /* Center the image */
+  display: block;
+  cursor: pointer; /* Add cursor pointer for clickable images */
+}
+
+.carousel-inner {
+  text-align: center; /* Center the images */
+}
